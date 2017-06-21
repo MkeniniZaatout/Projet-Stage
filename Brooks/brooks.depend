@@ -1,0 +1,859 @@
+# depslib dependency file v1.0
+1207749998 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1180695428 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224607656 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224607192 c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks\header.h
+
+1224607746 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1207749998 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224673499 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224673499 c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08\header.h
+
+1224607746 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224663706 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224673649 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224684497 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 plus pluie\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1207749998 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 plus pluie\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224607746 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 plus pluie\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224663706 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 plus pluie\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224690010 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 plus pluie\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224673499 c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 plus pluie\header.h
+
+1207749998 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224607748 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224663708 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224763905 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224762798 source:c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224761933 c:\documents and settings\hernandez\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\header.h
+
+1207749998 source:c:\documents and settings\micka\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224607746 source:c:\documents and settings\micka\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224663706 source:c:\documents and settings\micka\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224711863 source:c:\documents and settings\micka\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224711054 source:c:\documents and settings\micka\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224709720 c:\documents and settings\micka\bureau\colonne brookcorey 21-10-08\brooks 22-10-08 pluie ecoulement latéral\header.h
+
+1224763905 source:c:\documents and settings\hernandez\bureau\ecoulement brook\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1207749998 source:c:\documents and settings\hernandez\bureau\ecoulement brook\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224607748 source:c:\documents and settings\hernandez\bureau\ecoulement brook\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224663708 source:c:\documents and settings\hernandez\bureau\ecoulement brook\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224766197 source:c:\documents and settings\hernandez\bureau\ecoulement brook\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224761933 c:\documents and settings\hernandez\bureau\ecoulement brook\header.h
+
+1224778199 source:c:\documents and settings\hernandez\bureau\modèle hydro brook\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1207746398 source:c:\documents and settings\hernandez\bureau\modèle hydro brook\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224604148 source:c:\documents and settings\hernandez\bureau\modèle hydro brook\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\hernandez\bureau\modèle hydro brook\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224800272 source:c:\documents and settings\hernandez\bureau\modèle hydro brook\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224781252 c:\documents and settings\hernandez\bureau\modèle hydro brook\header.h
+
+1224775617 source:c:\documents and settings\hernandez\bureau\modèle hydro brook\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224778199 source:c:\documents and settings\micka\bureau\modèle hydro brook\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1207746398 source:c:\documents and settings\micka\bureau\modèle hydro brook\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\micka\bureau\modèle hydro brook\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\micka\bureau\modèle hydro brook\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\micka\bureau\modèle hydro brook\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1226507371 source:c:\documents and settings\micka\bureau\modèle hydro brook\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\micka\bureau\modèle hydro brook\header.h
+
+1224778199 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1207746398 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1243864584 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 01.06.09\header.h
+
+1224778199 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1244552415 source:c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07\bureau\menton\calcul\modèle hydro brook 20ale 2h 01.06.09\header.h
+
+1224778199 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.01\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.01\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.01\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.01\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.01\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224778199 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.001\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.001\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.001\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.001\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable 0.001\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1224778199 source:c:\documents and settings\poste07\bureau\copie de modèle hydro sable 0.001\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\copie de modèle hydro sable 0.001\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\copie de modèle hydro sable 0.001\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\copie de modèle hydro sable 0.001\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\copie de modèle hydro sable 0.001\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1246049043 source:c:\documents and settings\poste07\bureau\modèle hydro sable\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1246099871 source:c:\documents and settings\poste07\bureau\modèle hydro sable\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07\bureau\modèle hydro sable\header.h
+
+1246049043 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1246049043 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.1\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.1\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.1\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.1\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.1\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1246049043 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.001\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.001\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.001\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.001\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.001\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1243933198 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224775617 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1246209616 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1246709599 source:c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07\bureau\modèle hydro sable menton 0.006\header.h
+
+1246737177 source:c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1261397482 source:c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\header.h
+
+1256049894 source:c:\documents and settings\poste07\bureau\hydro menton 20ale 1.5m\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1246737177 source:c:\documents and settings\poste07\bureau\hydro menton 20ale\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07\bureau\hydro menton 20ale\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1256049894 source:c:\documents and settings\poste07\bureau\hydro menton 20ale\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07\bureau\hydro menton 20ale\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07\bureau\hydro menton 20ale\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1311766037 source:c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1256049894 source:c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1311766150 source:c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07.cabinet-risser\bureau\projet complet 27.07.11\hydro menton min 20ale 2h  1.5m\header.h
+
+1311766037 source:c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1311766224 source:c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1224777652 c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\header.h
+
+1256049894 source:c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07.cabinet-risser\bureau\hydro menton min 20ale 2h  1.5m\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1312988766 source:c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1312988567 source:c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1312988669 c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\header.h
+
+1312988842 source:c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07.cabinet-risser\bureau\test min 20ale 2h  1.5m\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1312991208 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1243933198 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1312988842 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224604148 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\testentier.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1224660108 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1312992814 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1312991702 c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\header.h
+
+1312980195 source:c:\documents and settings\poste07.cabinet-risser\bureau\test reussi min 20ale 2h  1.5m\calculmnt.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1313134405 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\calculmnt.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1313134029 c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\header.h
+
+1312991208 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\calculhydro.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<math.h>
+
+1313141029 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\filetotab.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1312988842 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\quinout.cpp
+	<math.h>
+	<cstdlib>
+	<iostream>
+
+1224660108 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\alloc.cpp
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1313141181 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\main.cpp
+	<iostream>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<fstream>
+	"header.h"
+
+1313134308 source:c:\documents and settings\poste07.cabinet-risser\bureau\cpgt roq min 20ale 2h  1.5m\atemp.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	"header.h"
+
