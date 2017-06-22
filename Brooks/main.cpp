@@ -116,7 +116,7 @@ int main()
     float** litho = NULL;
 
     tabMnt = tab2DAlloc(ligne, colonne);
-    tabPente = tab2DAlloc(ligne, colonne);
+    tabPente = tab2DAlloc(206, colonne);
     tabRg = tab2DAlloc(ligne, colonne);
     tabMasque = tab2DAlloc(ligne, colonne);
     tabPluie = tab2DAlloc(ligne, colonne);
@@ -159,8 +159,8 @@ int main()
     float*** tabquOut = NULL;
     float*** tabquIn = NULL;
 
-    cout << "nbreCase : "+nbrCase << endl;
-
+    cout << "nbreCase : "<< endl;
+    cout << nbrCase << endl;
     tabTeta = tab3DAlloc(ligne, colonne, nbrCase+1);
     tabquZ = tab3DAlloc(ligne, colonne, nbrCase+1);
     tabquIn = tab3DAlloc(ligne, colonne, nbrCase+1);
@@ -175,23 +175,27 @@ int main()
 
     string dossierZone = racine + "/" + nomZone;
 
-    cout << dossierZone + "/MNT.asc" << endl;
-
-
     fileMatrixToTab2D(tabMnt,   dossierZone + "/MNT.asc",    ligne, colonne);
-    system("PAUSE");
-    fileMatrixToTab2D(tabPente, dossierZone + "/Pente.asc",  ligne, colonne);
+    cout << "- MNT" << endl;
+    fileMatrixToTab2D(tabPente, dossierZone + "/Pente.asc",  206, colonne);
+    cout << "- Pente" << endl;
     fileMatrixToTab2D(tabRg,    dossierZone + "/Rg.asc",      ligne, colonne);
+    cout << "- Rg" << endl;
     fileMatrixToTab2D(litho,    dossierZone + "/Litho.asc",     ligne, colonne);
+    cout << "- Litho" << endl;
     fileMatrixToTab2D(tabMasque,dossierZone + "/Masque.asc",     ligne, colonne);
+    cout << "- Masque" << endl;
 
-
-    cout << "Lecture des fichiers Scenario" << endl;
+    cout << "Lecture des fichiers Scenario :" << endl;
 
     string dossierScenar = dossierZone + "/" + nomScenar + "/";
+    cout << "- Valeurs de ruissellement :" << endl;
+    fileMatrixToTab2D(rTab,dossierScenar + "Valeurs/valeurs-R.asc",   ligne, colonne);
 
-    fileMatrixToTab2D(rTab,         dossierScenar + "Valeurs/valeurs-R.asc",   ligne, colonne);
-    fileMatrixToTab2D(valeursGeol,  dossierScenar + "Valeurs/valeurs-Litho.asc", nbGeol, 13);
+    system("PAUSE");
+    cout << "- Valeurs lithologiques :" << endl;
+    // fileMatrixToTab2D(valeursGeol,dossierScenar + "Valeurs/valeurs-Litho.asc", nbGeol, 13);
+
 
     cout << "Remplissage des matrices" << endl;
 
@@ -200,7 +204,6 @@ int main()
         for(int j=0; j<colonne; j++)
         {
             int form = litho[i][j];
-
             tabC[i][j] = valeursGeol[form-1][0];
             tabPhi[i][j] = valeursGeol[form-1][1];
             tabGamaSec[i][j] = valeursGeol[form-1][2];
@@ -216,6 +219,7 @@ int main()
         }
     }
 
+    system("PAUSE");
     for(int i=0; i<ligne; i++)
     {
         for(int j=0; j<colonne; j++)
@@ -227,24 +231,27 @@ int main()
         }
     }
 
+
     /***************************************************
         Lecture du fichier de pluie
     ***************************************************/
 
     //--- Configuration Zone
     //
-    string cheminPropPluie = dossierScenar + "/Pluies/Pluvio-Prop.asc";
+    string cheminPropPluie = dossierScenar + "Pluies/Pluvio-Prop.asc";
+
+    // cout << cheminPropPluie << endl;
     ifstream fichierPropPluies(cheminPropPluie.c_str());
 
     int nbreMinPluie;
     fichierPropPluies >> nbreMinPluie;
 
     fichierPropPluies.close();
-
     float** pluies = NULL;
     pluies = tab2DAlloc(1, nbreMinPluie);
     fileMatrixToTab2D(pluies, dossierScenar + "Pluies/Pluvio.asc", 1, nbreMinPluie);
 
+    cout << "Lecture du fichier de pluie" << endl;
     /*****************************************************************
         Calcul des limites de chaque case
     *****************************************************************/

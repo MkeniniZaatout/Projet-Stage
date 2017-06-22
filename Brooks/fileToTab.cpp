@@ -3,6 +3,7 @@
 #include <fstream>
 #include<vector>
 #include <string>
+#include <math.h>
 #include "header.h"
 
 using namespace std;
@@ -152,36 +153,40 @@ float tab1D[size_X*size_Y];
                 cerr<<"Ouverture du fichier impossible de "<< nom <<endl;
                 exit(1);
             }
+
 while (!file.eof())
 {
-/* switch (nom) {
-        case "/MNT.asc": std::cout << "1";
-        case "/Pente.asc": std::cout << "2";   //execution starts at this case label
-        case "/Rg.asc": std::cout << "3";
-        case "":
-        case 5: std::cout << "45";
-                break;              //execution of subsequent statements is terminated
-        case 6: std::cout << "6";
-    } */
     file>>val;
+    // MNT -> 3 chiffres apres la virgule
+    if(nom == "/MNT.asc" || nom == "/Rg.asc"){
+       val = roundf(val*1000)/ 1000.0f;
+    // Pente -> 2 chiffres apres la virgule
+    }else if(nom == "/Pente.asc") {
+       val = roundf(val*100)/ 100.0f;
+    // Pente -> 3 chiffres apres la virgule
+    }
+    // file>>val;
     tab1D[i] = val;
     i++;
 }
+    file.close ();
 
-
-      file.close ();
+    cout << size_X <<" "<< size_Y << endl;
+    cout << "ligne x colonne : " << size_X*size_Y << endl;
+    cout << " i : " << i << endl;
 
     // Passage de tab1D à tab
         k =0;
+
         for (i=0; i<size_X ; i++)
         {
             for (j=0; j<size_Y ; j++)
             {
                 tab[i][j]=  tab1D [k];
                 k++;
-
             }
         }
+    cout << " Fin derniere boucle " << endl;
 }
 
 void tab2DToFileMatrix (float **tab, string nom, int ligne, int colonne)

@@ -656,11 +656,13 @@
 	<fstream>
 	"header.h"
 
-1393673865 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\filetotab.cpp
+1498126391 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\filetotab.cpp
 	<iostream>
 	<cstdlib>
 	<fstream>
 	<vector>
+	<string>
+	<math.h>
 	"header.h"
 
 1390921220 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\quinout.cpp
@@ -668,7 +670,7 @@
 	<cstdlib>
 	<iostream>
 
-1497972042 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\main.cpp
+1498137533 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\main.cpp
 	"header.h"
 	<ctime>
 	<iostream>
