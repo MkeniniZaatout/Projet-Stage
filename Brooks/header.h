@@ -29,13 +29,12 @@ float*** tab3DAlloc(int sizeX, int sizeY, int sizeZ);
 
 void tab3DDesAlloc(float ***tab, int sizeX, int sizeY);
 
-
 //Passage d'un fichier à un tab
 void fileToTab1D (float **tab, int nbLignes, string nom);
 
 void fileToTab2D (float **tab, string nom, int size_X, int size_Y);
 
-void fileMatrixToTab2D (float **tab, string nom, int size_X, int size_Y);
+void fileMatrixToTab2D (float **tab, string dossierScenar, string nom, int size_X, int size_Y);
 
 void tab2DToFileMatrix (float **tab,  string nom, int ligne, int colonne);
 

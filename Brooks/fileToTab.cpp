@@ -96,7 +96,7 @@ void fileToTab1D (float **tab, int nbLignes, string nom)
     while (!file.eof())
     {
         file >> val;
-        tab[0][i] = val;
+        tab[i][0] = val;
         i++;
     }
 
@@ -138,16 +138,45 @@ ifstream file (nom.c_str());
     	}
 
 }
+/*
+void fileMatrixToTab2D( float** arr, string nom, int largeur, int hauteur ) {
+    ifstream file( nom.c_str() );
+    float val = 0;
+    if( !file.good() ) {
+        cout << "Erreur : Ouverture du fichier impossible de "+nom << endl;
+        system( "PAUSE" );
+        exit( 1 );
+    }
 
-void fileMatrixToTab2D (float **tab, string nom, int size_X, int size_Y)
+    for( int x = 0; x < largeur && file.good(); x++ ){
+        for( int y = 0; y < hauteur && file.good(); y++ ){
+            file >> val;
+            // MNT ou Rg -> 3 chiffres apres la virgule
+            if(nom == "/MNT.asc" || nom == "/Rg.asc"){
+               val = roundf(val*1000)/ 1000.0f;
+            // Pente -> 2 chiffres apres la virgule
+            }else if(nom == "/Pente.asc") {
+               val = roundf(val*100)/ 100.0f;
+            }
+            val = arr[x][y];
+        }
+    }
+
+    file.close();
+}
+*/
+
+void fileMatrixToTab2D (float **tab, string dossierScenar, string nom, int size_X, int size_Y)
 {
+
+string path = dossierScenar+nom;
 float val = 0;
 
 int i=0, j=0, k=0;
 
 float tab1D[size_X*size_Y];
 
-    ifstream file (nom.c_str());
+    ifstream file (path.c_str());
         if(!file)
             {
                 cerr<<"Ouverture du fichier impossible de "<< nom <<endl;
@@ -158,10 +187,10 @@ while (!file.eof())
 {
     file>>val;
     // MNT -> 3 chiffres apres la virgule
-    if(nom == "/MNT.asc" || nom == "/Rg.asc"){
+    if(nom == "/Rg.asc"){
        val = roundf(val*1000)/ 1000.0f;
     // Pente -> 2 chiffres apres la virgule
-    }else if(nom == "/Pente.asc") {
+    }else if(nom == "/Pente.asc" || nom == "/MNT.asc" ) {
        val = roundf(val*100)/ 100.0f;
     // Pente -> 3 chiffres apres la virgule
     }
@@ -192,7 +221,7 @@ while (!file.eof())
 void tab2DToFileMatrix (float **tab, string nom, int ligne, int colonne)
 {
     ofstream fichier(nom.c_str());
-/*
+    /*
     Afin d'ecrire sur le fichier de matrice Hw et Fs
 
     if (nom.find("Sortie/HW/") != std::string::npos) {
@@ -201,7 +230,7 @@ void tab2DToFileMatrix (float **tab, string nom, int ligne, int colonne)
     else if(nom.find("Sortie/FS") != std::string::npos){
 
     }
-*/
+    */
     for(int i=0; i<ligne; i++)
     {
         for (int j=0; j<colonne; j++)
