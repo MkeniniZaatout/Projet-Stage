@@ -4,6 +4,15 @@
 #include <stdexcept>
 #include <stdio.h>      /* printf */
 #include <stdlib.h>
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+double getTime() {
+  LARGE_INTEGER freq, val;
+  QueryPerformanceFrequency(&freq);
+  QueryPerformanceCounter(&val);
+  return (double)val.QuadPart / (double)freq.QuadPart;
+}
+
 int main()
 {
     cout << "Bonjour !" << endl;
@@ -28,9 +37,9 @@ int main()
 
     fichierConfig.close();
 
-    cout << racine << endl;
-    cout << nomZone << endl;
-    cout << nomScenar << endl;
+    cout <<"racine : "+racine << endl;
+    cout << "nom zone : "+nomZone << endl;
+    cout << "nom scenario : "+nomScenar << endl;
     //--- Configuration Zone
     //
     string cheminZonolp = racine + "/" + nomZone + "/" + nomZone + ".zonolp";
@@ -190,16 +199,17 @@ int main()
     cout << "Lecture des fichiers Scenario :" << endl;
 
     string dossierScenar = dossierZone + "/" + nomScenar + "/";
-    cout << "- Valeurs de ruissellement :" << endl;
+    cout << "- Valeurs de ruissellement " << endl;
     fileMatrixToTab2D(rTab,dossierScenar, "Valeurs/valeurs-R.asc",   ligne, colonne);
-    cout << "- Valeurs lithologiques :" << endl;
+
+    cout << "- Valeurs lithologiques " << endl;
     fileMatrixToTab2D(valeursGeol,dossierScenar, "Valeurs/valeurs-Litho.asc", ligne, colonne);
-    cout << dossierScenar + "Valeurs/valeurs-Litho.asc" << endl;
+    // cout << dossierScenar + "Valeurs/valeurs-Litho.asc" << endl;
 
     // nbGeol, 13
 
     cout << "Remplissage des matrices" << endl;
-    cout << "litho :" << litho[0][0] << " mnt : " <<tabMnt[0][0] << " Rg : " << tabRg[0][0] << " Pente : " << tabPente[0][0] << endl;
+    // cout << "litho :" << litho[0][0] << " mnt : " <<tabMnt[0][0] << " Rg : " << tabRg[0][0] << " Pente : " << tabPente[0][0] << endl;
 
     for(int i=0; i<ligne; i++)
     {
@@ -226,7 +236,7 @@ int main()
             }
         }
     }
-
+/*
     for(int i=0; i<ligne; i++)
     {
         for(int j=0; j<colonne; j++)
@@ -234,10 +244,11 @@ int main()
             int form = litho[i][j];
             float angleMax = valeursGeol[form-1][12];
             if(tabPente[i][j] > angleMax || tabMasque[i][j] == 0)
+                cout << angleMax << endl;
             tabC[i][j] = 200;
         }
     }
-
+*/
     /***************************************************
         Lecture du fichier de pluie
     ***************************************************/
@@ -322,7 +333,7 @@ int main()
     /*****************************************************************
         Boucle de calcul
     *****************************************************************/
-
+    cout << "Stockage des FS et des HW en cours ...\n";
     for (int t = 0; t < tpsCalcul ; t++)
     {
         if (t < nbreMinPluie)
@@ -409,14 +420,30 @@ int main()
 
                     tabFs[a][b] = (  tabC[a][b] + ((   (tabGamaSec[a][b]*H) - (tabGamaSec[a][b] + 10 - tabGamaHum[a][b])*(tabHw[a][b]/100))*((cos((2*tabPente[a][b]))+1)/2)*tan(tabPhi[a][b]*DEGRE))  )
                                     /
-                                  (     ((tabGamaSec[a][b]*(H-tabHw[a][b]/100))+ (tabGamaHum[a][b]*(tabHw[a][b]/100)))  * ( sin(tabPente[a][b]) + k ) * cos(tabPente[a][b])          );
+                                  ( ((tabGamaSec[a][b]*(H-tabHw[a][b]/100))+ (tabGamaHum[a][b]*(tabHw[a][b]/100)))  * ( sin(tabPente[a][b]) + k ) * cos(tabPente[a][b])          );
+
+                // system("PAUSE");
+                // cout << tabFs[a][b] << endl;
+                /*
+                cout << "tabC : " << tabC[1][0]  << endl;
+                cout << "tabGamaSec : " << tabGamaSec[1][0]  << endl;
+                cout << "tabGamaHum : " << tabGamaHum[1][0]  << endl;
+                cout << "tabPente : " << tabPente[1][0]  << endl;
+
+                cout << " tabC "<< tabC[a][b] << endl;
+                cout << "tabGamaSec " << tabGamaSec[a][b] <<endl;
+                cout << "tabGamaHum " << tabGamaHum[a][b]<<endl;
+                cout << "tabHw " << tabHw[a][b] <<endl;
+                cout << "tabPhi " << tabPhi[a][b] <<endl;
+                */
                 }
             }
         }
 
+        // system("PAUSE");
         // --- Stockage des FS et des HW
         //
-        cout << "Stockage des FS et des HW\n";
+        // cout << "Stockage des FS et des HW\n";
         sprintf(nom, "Sortie/HW/HW-%d.asc", t);
         sprintf(nom2, "Sortie/FS/FS-%d.asc", t);
 
@@ -427,6 +454,7 @@ int main()
         AtempTimeHW(tabHw, tabAtempHW, tabTimeHW, t, ligne, colonne);
 
         cout << t << endl;
+        // cout << ".";
     }
 
     /*****************************************************************
@@ -434,19 +462,19 @@ int main()
     *****************************************************************/
 
     cout << "Generation des fichiers :" << endl;
-    tab2DToFileMatrix (tabAtempFS, dossierScenar + "Sortie/FS/FS-Atemp.asc", ligne, colonne);
+    tab2DToFileMatrix (tabAtempFS, dossierScenar+"Sortie/FS/FS-Atemp.asc", ligne, colonne);
     cout << "FS-Atemp.asc" << endl;
-    tab2DToFileMatrix (tabTimeFS, dossierScenar + "Sortie/FS/FS-Time.asc", ligne, colonne);
+    tab2DToFileMatrix (tabTimeFS, dossierScenar +"Sortie/FS/FS-Time.asc", ligne, colonne);
     cout << "FS-Time.asc" << endl;
-    tab2DToFileMatrix (tabAtempHW, dossierScenar + "Sortie/HW/HW-Atemp.asc", ligne, colonne);
+    tab2DToFileMatrix (tabAtempHW, dossierScenar +"Sortie/HW/HW-Atemp.asc", ligne, colonne);
     cout << "HW-Atemp.asc" << endl;
-    tab2DToFileMatrix (tabTimeHW, dossierScenar + "Sortie/HW/HW-Time.asc", ligne, colonne);
+    tab2DToFileMatrix (tabTimeHW, dossierScenar +"Sortie/HW/HW-Time.asc", ligne, colonne);
     cout << "HW-Time.asc" << endl;
 
     /*****************************************************************
         Libération de la mémoire
     *****************************************************************/
-
+    cout << "Programme getime : " << getTime() << endl;
     cout << "Liberation de la memoire" << endl;
 
     // tab2DDesAlloc(pluies, 1);
@@ -487,8 +515,10 @@ int main()
     tab2DDesAlloc(tabTimeHW, ligne);
 
     /****************************************************************/
-
+    cout << "Programme getime : " << getTime() << endl;
     cout << "Au revoir !" << endl;
+
     system("PAUSE");
+
     return 0;
 }

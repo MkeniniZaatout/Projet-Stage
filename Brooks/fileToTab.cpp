@@ -186,6 +186,7 @@ float tab1D[size_X*size_Y];
 while (!file.eof())
 {
     file>>val;
+ /*
     // MNT -> 3 chiffres apres la virgule
     if(nom == "/Rg.asc"){
        val = roundf(val*1000)/ 1000.0f;
@@ -194,19 +195,19 @@ while (!file.eof())
        val = roundf(val*100)/ 100.0f;
     // Pente -> 3 chiffres apres la virgule
     }
+*/
     // file>>val;
     tab1D[i] = val;
     i++;
 }
     file.close ();
-
+/*
     cout << size_X <<" "<< size_Y << endl;
     cout << "ligne x colonne : " << size_X*size_Y << endl;
     cout << " i : " << i << endl;
-
+*/
     // Passage de tab1D à tab
         k =0;
-
         for (i=0; i<size_X ; i++)
         {
             for (j=0; j<size_Y ; j++)
@@ -215,31 +216,29 @@ while (!file.eof())
                 k++;
             }
         }
-    cout << " Fin derniere boucle " << endl;
+    // cout << " Fin derniere boucle " << endl;
 }
 
 void tab2DToFileMatrix (float **tab, string nom, int ligne, int colonne)
 {
     ofstream fichier(nom.c_str());
-    /*
-    Afin d'ecrire sur le fichier de matrice Hw et Fs
-
-    if (nom.find("Sortie/HW/") != std::string::npos) {
-
-    }
-    else if(nom.find("Sortie/FS") != std::string::npos){
-
-    }
-    */
+    float val = 0;
     for(int i=0; i<ligne; i++)
     {
         for (int j=0; j<colonne; j++)
-        {
-            fichier << tab[i][j];
-            if(j!=colonne-1) fichier << "\t";
+        {      /*
+                * Afin d'ecrire sur les fichiers de matrice Hw.asci et Fs.ascii
+                * On Stocke chaque valeur sous forme de deux chiffre apres la virgule
+                */
+
+                val = tab[i][j];
+                tab[i][j] = roundf(tab[i][j]*100)/ 100.0f;
+                // cout << tab[i][j];
+                fichier << tab[i][j];
+                if(j!=colonne-1) fichier << "\t";
+                // tab[i][j] = roundf(val*100)/ 100.0f;
         }
         if(i!=ligne-1) fichier << "\n";
     }
-
     fichier.close();
 }

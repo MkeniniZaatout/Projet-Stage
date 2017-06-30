@@ -633,7 +633,7 @@
 	<fstream>
 	"header.h"
 
-1498212049 c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\header.h
+1498466932 c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\header.h
 	<stdio.h>
 	<string.h>
 	<sstream>
@@ -643,7 +643,7 @@
 	<math.h>
 	<fstream>
 
-1390921220 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\calculhydro.cpp
+1498662258 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\calculhydro.cpp
 	<iostream>
 	<cstdlib>
 	<fstream>
@@ -656,7 +656,7 @@
 	<fstream>
 	"header.h"
 
-1498231415 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\filetotab.cpp
+1498735787 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\filetotab.cpp
 	<iostream>
 	<cstdlib>
 	<fstream>
@@ -670,11 +670,12 @@
 	<cstdlib>
 	<iostream>
 
-1498312438 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\main.cpp
+1498822152 source:c:\users\ismael\documents\periode de stage\projet-code-noyau\brooks (projet codeblocks)\main.cpp
 	"header.h"
 	<ctime>
 	<iostream>
 	<stdexcept>
 	<stdio.h>
 	<stdlib.h>
+	<windows.h>
 

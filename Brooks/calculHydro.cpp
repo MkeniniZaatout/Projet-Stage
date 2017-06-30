@@ -87,15 +87,15 @@ float teta (float*** tabTetaHw, float hauteurCase, int i, int a, int b)
 
 float hwTest (float*** tabTetaHw, float** tetaHwMax, float** tetaHwMin, float hauteurCase, int nbrCase, int a, int b)
 {
-
     float hw = 0;
-
 
     for (int i = nbrCase-1; i > -1; i--)
         {
-            if (i == nbrCase-1 && tabTetaHw[a][b][i] == tetaHwMax[a][b])                            hw = hw + hauteurCase;
+            if (i == nbrCase-1 && tabTetaHw[a][b][i] == tetaHwMax[a][b])
+                hw = hw + hauteurCase;
 
-            else if (tabTetaHw[a][b][i] == tetaHwMax[a][b] && tabTetaHw[a][b][i+1] == tetaHwMax[a][b])  hw = hw + hauteurCase;
+            else if (tabTetaHw[a][b][i] == tetaHwMax[a][b] && tabTetaHw[a][b][i+1] == tetaHwMax[a][b])
+                hw = hw + hauteurCase;
 
             else if (tabTetaHw[a][b][i] < tetaHwMax[a][b] && tabTetaHw[a][b][i+1] == tetaHwMax[a][b])
                 {
